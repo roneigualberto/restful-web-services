@@ -1,4 +1,4 @@
-package com.in28minutes.rest.webservices;
+package com.in28minutes.rest.webservices.helloworld;
 
 
 import org.springframework.web.bind.annotation.GetMapping;
