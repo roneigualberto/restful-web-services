@@ -1,9 +1,11 @@
 package com.in28minutes.rest.webservices.filter;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonFilter;
 
-@JsonIgnoreProperties(value= {"field1","field2"})
+@JsonFilter(SomeBean.FILTER)
 public class SomeBean {
+
+	public static final String FILTER = "SomeBeanFilter";
 
 	private String field1;
 
